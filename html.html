@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+
+        <div class="login">
+            <h1>Login</h1>
+            <div class="input">
+            <input type="email" name="" id="email" placeholder="Email"  spellcheck="false" onkeyup="validmail()">
+            <p class="empty" ></p>
+            
+        </div>
+        <div class="input">
+            <input type="password" name="" id="pass" placeholder="password" onkeyup="passerr()" spellcheck="false" />
+            <p class="empty-pass"></p>
+            </div>
+            <button id="log">Login</button>
+        </div>
+        <div class="signup">
+             <h1>Sign up</h1>
+
+             <div class="input"> <input type="email" name="" id="signemail" placeholder="Email" onkeyup="signerr()">  <h4 id="signerr"></h4>             </div>  
+             <div class="input"> <input type="text" name="" id="user" placeholder="user" onkeyup="user()"> 
+                <h4 id="usererr"></h4>
+            </div>
+             <div class="input"> <input type="password" name="" id="signpassword" placeholder="password" onkeyup="signpass()">  <h4 class="sign-pass"></h4>       </div>  
+             <div class="input"> <input type="password" name="" id="signconfrimpassword" placeholder="confirm password" onkeyup="signpasserr()"> <h4 class="sign-conform"></h4>  </div>
+             <button class="sig">sign up</button>
+        </div>
+        <div class="demo-1">
+            <h1>Login</h1>
+            <h3>New here?</h3>
+            <p>sign up and discover</p>
+            <button class="demo-btn-log">log in</button>
+        </div>
+        <div class="demo-2">
+            <h1>Sign Up</h1>
+            <h3>One of us?</h3>
+            <p>Just sign in</p>
+            <button class="demo-btn-sign">Sign up</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

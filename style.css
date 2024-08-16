@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #74A1C3;
+}
+.card{
+    width:900px;
+    height:300px;
+    background-color: #6482AD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    padding:20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.login,.signup,.demo-1,.demo-2{
+    width:45%;
+    height: 160%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+.login,.signup{
+    display: none;
+}
+.active{
+    display: flex;
+}
+.demo-1,.demo-2{
+    height:80%;
+}
+
+
+.input{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    & p{
+        color:rgb(246, 245, 245);
+    }
+}
+
+
+.login,.demo-1{
+    background-color: #686D76;
+    color:#fff;
+}
+.signup,.demo-2{
+    background-color: #B5c0D0;
+    color:rgb(85, 84, 84);
+}
+button{
+    width:120px;
+    margin-left: 33%;
+    padding:10px 15px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+input{
+    height:40px;
+    padding:10px 15px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+input::placeholder,button{
+    text-transform: capitalize;
+}
+
+h1{
+    text-transform: uppercase;
+    color:#fff;
+}
+.sig,.demo-btn-sign{
+    background-color:#686D76;
+    color:#fff;
+    font-weight: 600;
+
+}
+h4{
+    color:red;
+}
+#log{
+    font-weight: 600;
+    
+}
+@media(max-width:480px){
+    .card{
+        width:450px;
+        height:200px;
+        gap:10px;
+       padding: 10px;
+    }
+    .login,.signup{
+        gap:7px;
+        padding: 4px 10px;
+        height: 140%;
+    }
+    button{
+        margin-left:18%;
+    }
+    h1{
+        font-size: 16px;
+    }
+    input{
+        padding:4px 8px;
+    }
+    .demo-1,.demo-2{
+        height:90%;
+        
+    }
+}
+@media(max-width:768px){
+    .card{
+        width:700px;
+        height:280px;
+    }
+}
