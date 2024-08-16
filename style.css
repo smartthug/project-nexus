@@ -23,6 +23,7 @@ body{
     align-items: center;
     padding:20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   
 }
 .login,.signup,.demo-1,.demo-2{
     width:45%;
@@ -74,7 +75,8 @@ button{
     border-radius: 10px;
     border:none;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-}
+    margin-left:auto;
+    margin-right: auto}
 input{
     height:40px;
     padding:10px 15px;
@@ -103,6 +105,7 @@ h4{
     font-weight: 600;
     
 }
+
 @media(max-width:480px){
     .card{
         width:450px;
@@ -115,14 +118,19 @@ h4{
         padding: 4px 10px;
         height: 140%;
     }
-    button{
-        margin-left:18%;
-    }
+    
     h1{
         font-size: 16px;
     }
     input{
         padding:4px 8px;
+        font-size: 14px;
+    }
+    p{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 14px;
     }
     .demo-1,.demo-2{
         height:90%;
@@ -134,4 +142,34 @@ h4{
         width:700px;
         height:280px;
     }
+
+}
+@media(max-width:380px){
+ button{
+    margin-left:auto;
+    margin-right: auto;
+ }
+ .login{
+    gap:10px;
+ }
+ p{
+    font-size: 8px;
+
+ }
+ h4{
+    font-size: 8px;
+ }
+ input{
+    font-size: 10px;
+   height:30px;
+ }
+ .card{
+   
+    height:210px;
+   
+ }
+ .demo-1,.demo-2{
+    height:100%;
+    gap: 4px;
+}
 }
